@@ -43,7 +43,7 @@ if ingredients_list:
 
         st.subheader(fruit_chosen + ' Nutrition Information')
 
-        # my_insert_stmt = """ insert into smoothies.public.orders(ingredients, NAME_ON_ORDER) values ('""" + ingredients_string + """','"""+name_on_order+"""')"""
+        my_insert_stmt = """ insert into smoothies.public.orders(ingredients, NAME_ON_ORDER) values ('""" + ingredients_string + """','"""+name_on_order+"""')"""
 
         smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/" + search_on)
         # st.text(smoothiefroot_response)
